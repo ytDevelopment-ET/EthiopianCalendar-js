@@ -1,2 +1,2 @@
 # EthiopianCalendar-js
-Gregorian Calendar to Ethiopian Calendar convert for Javascript
+Gregorian Calendar to Ethiopian Calendar Converter for Javascript
