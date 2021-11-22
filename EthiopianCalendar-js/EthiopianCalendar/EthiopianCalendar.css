@@ -1,0 +1,47 @@
+/*
+ * Written by Yonathan Tesfaye on 06/06/2021 at 9:55 AM
+ */
+
+* {
+    font-family: sans-serif;
+}
+
+table.calendar {
+    text-align: center;
+    background: white;
+    border-collapse: collapse;
+    box-shadow: 0 1px 5px 0 #00000030;
+    margin-bottom: 10px;
+}
+
+table.calendar td {
+    cursor: pointer;
+    min-width: 40px;
+    padding: 5px 0;
+}
+
+table.calendar th {
+    cursor: pointer;
+    min-width: 40px;
+    padding: 5px 0;
+    background: #4CAF50;
+    color: white;
+}
+
+table.calendar th.rest {
+    color: white;
+    background: black;
+}
+
+td.today {
+    background: #2196F3;
+    color: white;
+}
+
+td.today:hover {
+    background: #70c2f3;
+}
+
+td.day:hover {
+    background: lightgray;
+}
