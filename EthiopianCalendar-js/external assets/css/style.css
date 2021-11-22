@@ -1,0 +1,144 @@
+/*
+ * Written by Yonathan Tesfaye on 06/06/2021 at 10:30 AM
+ */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    padding: 10px;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    color: white;
+    padding: 10px;
+    background: #2196F3;
+    box-shadow: 0 1px 5px 0 #0000007a;
+}
+
+.nav .title {
+    margin: 0;
+}
+
+.nav .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav ul {
+    list-style: none;
+    display: inline;
+}
+
+.nav ul li {
+    display: inline;
+    cursor: pointer;
+}
+
+.nav ul li > a {
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul li > a:hover {
+    color: black;
+    background: white;
+}
+
+.drop-down {
+    position: relative;
+}
+
+.drop-down-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 12px);
+    min-width: 100%;
+    width: max-content;
+    background: white;
+    box-shadow: 0 5px 5px 0 #0000007a;
+    text-align: center;
+    color: black;
+    padding: 5px;
+}
+
+.drop-down-btn:hover ~ .drop-down-content {
+    display: block;
+}
+
+.drop-down:hover .drop-down-content {
+    display: block;
+}
+
+.drop-down:hover .drop-down-btn {
+    color: black;
+    background: white;
+}
+
+pre {
+    overflow: auto;
+    display: inline-block;
+    background: #272822;
+    color: white;
+    padding: 10px;
+    font-size: small;
+    font-family: Consolas, monospace;
+}
+
+pre > * {
+    font-family: Consolas, monospace;
+}
+
+.comment {
+    color: #746640;
+}
+
+.red {
+    color: red;
+}
+
+.tag, .variable {
+    color: #ff7f4d;
+}
+
+.attr, .method {
+    color: fuchsia;
+}
+
+.keyword {
+    color: cyan;
+}
+
+.string {
+    color: #eac500;
+}
+
+@media (max-width: 500px) {
+    .nav ul li > a {
+        display: block;
+    }
+
+    .nav {
+        position: relative;
+    }
+
+    .drop-down-content {
+        width: auto;
+    }
+
+    pre {
+        width: 280px;
+        max-width: 280px;
+    }
+}
+
+hr {
+	border: 1px solid lightgray;
+}
